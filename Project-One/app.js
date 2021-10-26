@@ -103,10 +103,71 @@
 
 //LOGICAL OPERATORS
 //(|| - OR), (&& - AND), !
-const name = "dan";
-const age = "31";
-if (name === "dan" && age === 27) {
-  console.log("what up dan");
-} else {
-  console.log("wait who r u");
-}
+// const name = "dan";
+// const age = "31";
+// if (name === "dan" && age === 27) {
+//   console.log("what up dan");
+// } else {
+//   console.log("wait who r u");
+// }
+
+//SWITCH STATEMENTS
+// DICE VALUE: 1-6
+// const dice = 0;
+// if (dice === 1) {
+//   console.log("one");
+// }
+// if (dice === 2) {
+//   console.log("two");
+// }
+// if (dice < 1 || dice > 6) {
+//   console.log("u did not roll");
+// }
+// const dice = 1;
+
+// switch (dice) {
+//   case 1:
+//     console.log("once");
+//     break;
+//   case 2:
+//     console.log("two");
+//     break;
+//   case 3:
+//     console.log("three");
+//     break;
+//   default:
+//     console.log("you did not roll");
+// }
+
+//LOOPS
+//repeatedly run a block of code while condition is true
+//WHILE LOOP
+// let amount = 10;
+// while (amount > 0) {
+//   console.log("I have" + amount + "dollars and I'm going to the mall");
+//   //escape from the loop
+//   amount--;
+// }
+
+//DO WHILE LOOPS
+//code block first, condition second
+//runs atleast onnce
+// let money = 0;
+// do {
+//   console.log("You have " + money + " dollars");
+//   money++;
+// } while (money < 10);
+
+//FOR LOOPS
+// let i;
+// for (i = 0; i < 10; i++) {
+//   console.log("and the number is : " + i);
+// }
+// for (let number = 11; number > +0; number--) {
+//   console.log("and the number  is " + number);
+// }
+
+//STRING PROPERTIES AND METHODS
+//wrapper String Object
+
+let text = "JOJI SCOTT";
