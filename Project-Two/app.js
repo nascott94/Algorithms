@@ -146,5 +146,5 @@
 //can be access anywhere in the program
 //gotchas: name collisions, modify by mistake
 
-let name = "SHISHTO";
-name = "POKEMON";
+// let name = "SHISHTO";
+// name = "POKEMON";
