@@ -53,17 +53,98 @@
 // console.log(specificNames);
 // console.log(allNames);
 
-//ARRAYS AND FOR LOOPS
-const names = ["lucy", "olive", "wile", "pumpkin", "leo"];
-const lastName = "DOGZ";
-let newArray = [];
-//FOR LOOP
-for (let i = 0; i < names.length; i++) {
-  console.log(i);
-  console.log(names[i]);
-  const fullName = `${names[i]} ${lastName}`;
-  newArray.push(fullName);
-}
+// //ARRAYS AND FOR LOOPS
+// const names = ["lucy", "olive", "wile", "pumpkin", "leo"];
+// const lastName = "DOGZ";
+// let newArray = [];
+// //FOR LOOP
+// for (let i = 0; i < names.length; i++) {
+//   console.log(i);
+//   console.log(names[i]);
+//   const fullName = `${names[i]} ${lastName}`;
+//   newArray.push(fullName);
+// }
 
-console.log(names);
-console.log(newArray);
+// console.log(names);
+// console.log(newArray);
+
+// //FUNCTIONS, RETURN, IF, ARRAYS, FOR LOOPS
+// const gas = [20, 40, 100, 30];
+// const food = [10, 40, 50];
+
+// function calculateTotal(arr) {
+//   let total = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     total += arr[i];
+//   }
+//   if (total > 100) {
+//     console.log(`U SPENDING TOO MUCH `);
+//   }
+//   console.log(`IT OK KEEP SPENDING`);
+
+//   return total;
+// }
+
+// const gasTotal = calculateTotal(gas);
+// const foodTotal = calculateTotal(food);
+// const randomTotal = calculateTotal([200, 4000, 500, 1]);
+
+// console.log({
+//   gas: gasTotal,
+//   food: foodTotal,
+//   random: randomTotal,
+// });
+
+//REFERNCE VS VALUE
+//when assignging primitive data type value to a variable any changes are made directly to that value without effecting og value
+//when assigning non prim data type value to a variable is done by reference so any changes will effect all the references
+// const number = 1;
+// const number2 = number;
+// console.log(`the first value is ${number}`);
+// console.log(`the first value is ${number2}`);
+
+// let person = { name: "JOJI" };
+// let person2 = person;
+// person2.name = "pokemon";
+
+// console.log(`the name of the first person is ${person.name}`);
+// console.log(`the other person is ${person2.name}`);
+
+//NULL AND UNDEFINIED
+//both represent "no value"
+
+//undefined - "javascript can not find value for this"
+
+//variable without value
+//missing function arguments
+//missing object properties
+
+//null-"developer sets the value"
+
+//TRUTHY AND FALSY
+//"",'',``,0, -0, NaN, false, null, undefined .... these are falsy values, everything else truthy
+
+// const bool1 = true;
+// const bool2 = 2 > 1;
+
+// const text = "HELLO WORLD IT ME";
+// if (text) {
+//   console.log("the value is ~truthy~");
+// } else {
+//   console.log("ok the value is ~falsy~");
+// }
+
+//TERNARY OPERATOR
+//condition ? (runs if true) : (runs if false)
+
+// const value = 1 < 0;
+
+// value ? console.log("value is TRUEEEEEE") : console.log("value is FALSEEEE");
+
+//GLOBAL AND LOCAL SCOPE
+//any variable outside code block {} is said to be in Global Scope
+//can be access anywhere in the program
+//gotchas: name collisions, modify by mistake
+
+let name = "SHISHTO";
+name = "POKEMON";
