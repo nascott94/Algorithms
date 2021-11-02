@@ -188,12 +188,35 @@
 //   console.log(numbers[i]);
 // }
 //FOREACH: does not return a new array
+// const dogs = [
+//   { name: "JOJI", age: 1, postion: "RULER" },
+//   { name: "pokemon", age: 2, postion: "boy scout" },
+//   { name: "link", age: 1, postion: "a boy who loves joji" },
+// ];
+// //both functions do the same thing below
+// function showDog(dog) {
+//   console.log(dog.postion.toUpperCase());
+// }
+// dogs.forEach(showDog);
+
+// dogs.forEach(function (item) {
+//   console.log(item.postion.toUpperCase());
+// });
+//MAP: does return a new array, does not change size of orginal array, uses values from orginial array when making a new one
 const dogs = [
   { name: "JOJI", age: 1, postion: "RULER" },
   { name: "pokemon", age: 2, postion: "boy scout" },
   { name: "link", age: 1, postion: "a boy who loves joji" },
 ];
-function showDog(dog) {
-  console.log(dog.postion.toUpperCase());
-}
-dogs.forEach(showDog);
+
+const ages = dogs.map(function (dog) {
+  return dog.age + 3;
+});
+const newDogs = dogs.map(function (dog) {
+  return { firstName: dog.name.toUpperCase(), oldAge: dog.age + 10 };
+});
+const names = dogs.map(function (dog) {
+  return `<h1>${dog.name}</h1>`;
+});
+document.body.innerHTML = names.join("");
+console.log(names);
