@@ -176,3 +176,24 @@
 // }
 // greet("dan", morning);
 // greet("pokemon", afternoon);
+
+//POWERFUL ARRAY METHODS
+//forEach, map, filter, find, reduce
+//iterate over array - no for loop required
+//accept callback function as an argument, calls callback againsy ech item in an array,
+
+// const number = [0, 1, 2, 3, 4];
+// //show all numbers
+// for (let i = 0; i < numbers.length; i++) {
+//   console.log(numbers[i]);
+// }
+//FOREACH: does not return a new array
+const dogs = [
+  { name: "JOJI", age: 1, postion: "RULER" },
+  { name: "pokemon", age: 2, postion: "boy scout" },
+  { name: "link", age: 1, postion: "a boy who loves joji" },
+];
+function showDog(dog) {
+  console.log(dog.postion.toUpperCase());
+}
+dogs.forEach(showDog);
