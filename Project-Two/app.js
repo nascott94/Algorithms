@@ -148,3 +148,17 @@
 
 // let name = "SHISHTO";
 // name = "POKEMON";
+
+// //VARIABLE LOOKUP
+// //{} - CODE BLOCK
+
+// const globalNumber = 5;
+// function add(num1, num2) {
+//   const result = num1 + num2 + globalNumber;
+//   return result;
+// }
+// console.log(add(3, 4));
+
+//CALLBACK FUNCTIONS, HIGHER ORDER FUNCTIONS
+//higher order functions: accept another function as an argument or returns another function as a result
+//callback function: passed to another function as an argument and executed inside that function
