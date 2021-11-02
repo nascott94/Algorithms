@@ -162,3 +162,17 @@
 //CALLBACK FUNCTIONS, HIGHER ORDER FUNCTIONS
 //higher order functions: accept another function as an argument or returns another function as a result
 //callback function: passed to another function as an argument and executed inside that function
+
+// function morning(name) {
+//   return `Good morning ${name.toUpperCase()}`;
+// }
+// function afternoon(name) {
+//   return `Good afternoon ${name.repeat(3)}`;
+// }
+
+// function greet(name, callBack) {
+//   const myName = "JOJI";
+//   console.log(`${callBack(name)}, I AM YOUR RULER ${myName}`);
+// }
+// greet("dan", morning);
+// greet("pokemon", afternoon);
