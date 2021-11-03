@@ -203,20 +203,46 @@
 //   console.log(item.postion.toUpperCase());
 // });
 //MAP: does return a new array, does not change size of orginal array, uses values from orginial array when making a new one
-const dogs = [
-  { name: "JOJI", age: 1, postion: "RULER" },
-  { name: "pokemon", age: 2, postion: "boy scout" },
-  { name: "link", age: 1, postion: "a boy who loves joji" },
-];
+// const dogs = [
+//   { name: "JOJI", age: 1, postion: "RULER" },
+//   { name: "pokemon", age: 2, postion: "boy scout" },
+//   { name: "link", age: 1, postion: "a boy who loves joji" },
+// ];
 
-const ages = dogs.map(function (dog) {
-  return dog.age + 3;
+// const ages = dogs.map(function (dog) {
+//   return dog.age + 3;
+// });
+// const newDogs = dogs.map(function (dog) {
+//   return { firstName: dog.name.toUpperCase(), oldAge: dog.age + 10 };
+// });
+// const names = dogs.map(function (dog) {
+//   return `<h1>${dog.name}</h1>`;
+// });
+// document.body.innerHTML = names.join("");
+// console.log(names);
+//FILTER
+// const dogs = [
+//   { name: "JOJI", age: 1, postion: "RULER" },
+//   { name: "pokemon", age: 2, postion: "boy scout" },
+//   { name: "link", age: 1, postion: "a boy who loves joji" },
+// ];
+// const oldDogs = dogs.filter(function (dog) {
+//   return dog.age <= 2;
+// });
+// console.log(oldDogs);
+
+// const ruler = dogs.filter(function (dog) {
+//   return dog.postion === "RULER";
+// });
+// console.log(ruler);
+//FIND
+//returns object, returns first match, great for getting unique value
+const dogs = [
+  { name: "JOJI", age: 1, postion: "RULER", id: 1 },
+  { name: "pokemon", age: 2, postion: "boy scout", id: 2 },
+  { name: "link", age: 1, postion: "a boy who loves joji", id: 3 },
+];
+const dog = dogs.find(function (dog) {
+  return dog.id === 3;
 });
-const newDogs = dogs.map(function (dog) {
-  return { firstName: dog.name.toUpperCase(), oldAge: dog.age + 10 };
-});
-const names = dogs.map(function (dog) {
-  return `<h1>${dog.name}</h1>`;
-});
-document.body.innerHTML = names.join("");
-console.log(names);
+console.log(dog);
