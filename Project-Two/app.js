@@ -237,12 +237,35 @@
 // console.log(ruler);
 //FIND
 //returns object, returns first match, great for getting unique value
-const dogs = [
-  { name: "JOJI", age: 1, postion: "RULER", id: 1 },
-  { name: "pokemon", age: 2, postion: "boy scout", id: 2 },
-  { name: "link", age: 1, postion: "a boy who loves joji", id: 3 },
-];
-const dog = dogs.find(function (dog) {
-  return dog.id === 3;
-});
-console.log(dog);
+// const dogs = [
+//   { name: "JOJI", age: 1, postion: "RULER", id: 1 },
+//   { name: "pokemon", age: 2, postion: "boy scout", id: 2 },
+//   { name: "link", age: 1, postion: "a boy who loves joji", id: 3 },
+// ];
+// const names = ["JOJI", "link"];
+// console.log(
+//   names.find(function (name) {
+//     return name === "link";
+//   })
+// );
+// const dog = dogs.find(function (dog) {
+//   return dog.id === 3;
+// });
+// console.log(dog.name);
+//REDUCE
+//iterates, callback function
+//reduces to a single value - number, array, object
+//1 parameter ('acc') - total of all calculations
+//2 parameter ('curr') - current iteration/value
+// const dogs = [
+//   { name: "JOJI", age: 1, postion: "RULER", id: 1, salary: 1000000 },
+//   { name: "pokemon", age: 2, postion: "boy scout", id: 2, salary: 500 },
+//   { name: "link", age: 1, postion: "a boy who loves joji", id: 3, salary: 200 },
+// ];
+// const total = dogs.reduce(function (acc, currItem) {
+//   console.log(`total ${acc}`);
+//   console.log(`current money: ${currItem.salary}`);
+//   acc += currItem.salary;
+
+//   return acc;
+// }, 0);
