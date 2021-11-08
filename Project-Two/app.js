@@ -270,4 +270,14 @@
 //   return acc;
 // }, 0);
 
-//MATH: standard built in objects
+//MATH: standard built in objects - always available
+//random number
+
+// const number = 4.56789;
+// const result = Math.ceil(number);
+
+// const number = 89;
+// const result = Math.min(4, 5, 6, 7, 8, 9);
+// const result = Math.max(6, 8, 9, 10, 12);
+const result = Math.floor(Math.random() * 10);
+console.log(result);
