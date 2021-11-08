@@ -279,5 +279,44 @@
 // const number = 89;
 // const result = Math.min(4, 5, 6, 7, 8, 9);
 // const result = Math.max(6, 8, 9, 10, 12);
-const result = Math.floor(Math.random() * 10);
-console.log(result);
+// const result = Math.floor(Math.random() * 10);
+// console.log(result);
+
+//DATE
+const months = [
+  "JANUARY",
+  "FEBUARY",
+  "MARCH",
+  "APRIL",
+  "MAY",
+  "JUNE",
+  "JULY",
+  "AUGUST",
+  "SEPTEMBER",
+  "OCTOBER",
+  "NOVEMBER",
+  "DECEMBER",
+];
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const date = new Date();
+const month = date.getMonth();
+console.log(months[month]);
+
+const day = date.getDay();
+console.log(days[day]);
+
+console.log(date.getDate());
+console.log(date.getFullYear());
+
+const sentence = `${days[day]}, ${date.getDate()} ${
+  months[month]
+} ${date.getFullYear()}`;
+document.body.innerHTML = sentence;
