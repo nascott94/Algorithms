@@ -84,13 +84,20 @@
 // const links = document.querySelectorAll(".first");
 // console.log(links);
 
-//CLASSNAME/CLASSLIST
-const first = document.getElementById("first");
-const second = document.getElementById("second");
-const third = document.getElementById("third");
+// //CLASSNAME/CLASSLIST
+// const first = document.getElementById("first");
+// const second = document.getElementById("second");
+// const third = document.getElementById("third");
 
-const classValue = first.className;
-console.log(classValue);
+// const classValue = first.className;
+// console.log(classValue);
 
-second.className = "colors text";
-third.classList.add("colors");
+// second.className = "colors text";
+// third.classList.add("colors");
+
+// //CREATE ELEMENT
+// const result = document.querySelector("#results");
+// //create empty element
+// const bodyDiv = document.createElement("div");
+// //create text node
+// const text = document.createTextNode;
