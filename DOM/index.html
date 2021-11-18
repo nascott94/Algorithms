@@ -6,21 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DOM</title>
     <style>
-      .colors {
+      .red {
         background: red;
         color: white;
-      }
-      .text {
+        text-transform: uppercase;
         font-size: 2rem;
-        letter-spacing: 1rem;
+      }
+      .blue {
+        background: blue;
+        color: white;
+        text-transform: capitalize;
+        letter-spacing: 10px;
+      }
+      .btn {
+        background: #f15025;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
       }
     </style>
   </head>
   <body>
-    <h1 id="first" class="text">i'm first element</h1>
-    <h1 id="second">i'm second element</h1>
-    <h1 id="third">i'm third element</h1>
+    <h2>events in javascript</h2>
+    <button class="btn">click me</button>
     <!-- javascript -->
+    <p onclick="this.classList.add('red')">the old style</p>
     <script src="app.js"></script>
   </body>
 </html>
