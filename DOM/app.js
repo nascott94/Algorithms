@@ -102,7 +102,7 @@
 // //create text node
 // const text = document.createTextNode;
 
-// // select element
+// // SELECT ELEMENT
 // // addEventListener()
 // // what event, what to do
 
@@ -121,3 +121,37 @@
 // //   heading.classList.add("red");
 // // });
 // btn.addEventListener("click", changeColors);
+
+//CLICK- fires after full action occurs
+//mouse down
+//mouse up
+//mouse enter
+//mouse leave
+// const heading = document.querySelector("h1");
+// const btn = document.querySelector(".btn");
+
+// btn.addEventListener("click", function () {
+//   console.log("you clicked me");
+// });
+// btn.addEventListener("mousedown", function () {
+//   console.log("down");
+// });
+// btn.addEventListener("mouseup", function () {
+//   console.log("up");
+// });
+
+// heading.addEventListener("mouseenter", function () {
+//   heading.classList.add("blue");
+// });
+// heading.addEventListener("mouseleave", function () {
+//   heading.classList.remove("blue");
+// });
+
+//KEYPRESS
+const nameInput = document.getElementById("name");
+// nameInput.addEventListener("keypress", function () {
+//   console.log("you pressed that key ya did");
+// });
+nameInput.addEventListener("keyup", function () {
+  console.log(nameInput.value);
+});
