@@ -147,11 +147,28 @@
 //   heading.classList.remove("blue");
 // });
 
-//KEYPRESS
-const nameInput = document.getElementById("name");
-// nameInput.addEventListener("keypress", function () {
-//   console.log("you pressed that key ya did");
+// //KEYPRESS
+// const nameInput = document.getElementById("name");
+// // nameInput.addEventListener("keypress", function () {
+// //   console.log("you pressed that key ya did");
+// // });
+// nameInput.addEventListener("keyup", function () {
+//   console.log(nameInput.value);
 // });
-nameInput.addEventListener("keyup", function () {
-  console.log(nameInput.value);
+
+//EVENT OBJECT ARGUMENT
+const heading = document.querySelector("h1");
+const btn = document.querySelector(".btn");
+
+heading.addEventListener("click", function (event) {
+  console.log(event.currentTarget);
 });
+
+btn.addEventListener("click", function (event) {
+  event.currentTarget.classList.add("blue");
+  console.log(event.type);
+});
+
+function someFun(e) {
+  e.preventDefault();
+}
