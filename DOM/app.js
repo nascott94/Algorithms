@@ -156,19 +156,30 @@
 //   console.log(nameInput.value);
 // });
 
-//EVENT OBJECT ARGUMENT
-const heading = document.querySelector("h1");
-const btn = document.querySelector(".btn");
+// //EVENT OBJECT ARGUMENT
+// const heading = document.querySelector("h1");
+// const btn = document.querySelector(".btn");
 
-heading.addEventListener("click", function (event) {
-  console.log(event.currentTarget);
+// heading.addEventListener("click", function (event) {
+//   console.log(event.currentTarget)
+// });
+
+// btn.addEventListener("click", function (event) {
+//   event.currentTarget.classList.add("blue");
+//   console.log(event.type);
+// });
+
+// function someFun(e) {
+//   e.preventDefault();
+// }
+
+//CURRENT TARGET
+//always refers to the element to which the event handler had been attached to
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    console.log(e.currentTarget);
+    e.currentTarget.style.color = "pink";
+  });
 });
-
-btn.addEventListener("click", function (event) {
-  event.currentTarget.classList.add("blue");
-  console.log(event.type);
-});
-
-function someFun(e) {
-  e.preventDefault();
-}
