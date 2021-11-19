@@ -173,13 +173,27 @@
 //   e.preventDefault();
 // }
 
-//CURRENT TARGET
-//always refers to the element to which the event handler had been attached to
-const btns = document.querySelectorAll(".btn");
+// //CURRENT TARGET
+// //always refers to the element to which the event handler had been attached to
+// const btns = document.querySelectorAll(".btn");
 
-btns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    console.log(e.currentTarget);
-    e.currentTarget.style.color = "pink";
-  });
-});
+// btns.forEach(function (btn) {
+//   btn.addEventListener("click", function (e) {
+//     console.log(e.currentTarget);
+//     e.currentTarget.style.color = "pink";
+//   });
+// });
+
+//EVENT PROPOGATION
+//order the events are fired
+//bubbling-clicked element first then bubbles up -- default
+
+const container = document.querySelector(".container");
+const list = document.querySelector(".list-items");
+
+function showBubbling(e) {
+  console.log("current target", e.currentTarget);
+  console.log("target", e.target);
+}
+list.addEventListener("click", showBubbling);
+container.addEventListener("click", showBubbling);
