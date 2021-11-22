@@ -184,16 +184,39 @@
 //   });
 // });
 
-//EVENT PROPOGATION
-//order the events are fired
-//bubbling-clicked element first then bubbles up -- default
+// //EVENT PROPOGATION
+// //order the events are fired
+// //bubbling-clicked element first then bubbles up -- default
 
-const container = document.querySelector(".container");
-const list = document.querySelector(".list-items");
+// const container = document.querySelector(".container");
+// const list = document.querySelector(".list-items");
 
-function showBubbling(e) {
-  console.log("current target", e.currentTarget);
-  console.log("target", e.target);
+// function showBubbling(e) {
+//   console.log("current target", e.currentTarget);
+//   console.log("target", e.target);
+// }
+// list.addEventListener("click", showBubbling);
+// container.addEventListener("click", showBubbling);
+
+const conatiner = document.querySelector(".container");
+const btn = document.querySelector(".btn");
+// const heading = document.querySelector(".heading");
+
+function sayHello() {
+  console.log("hello there");
 }
-list.addEventListener("click", showBubbling);
-container.addEventListener("click", showBubbling);
+
+btn.addEventListener("click", function () {
+  const element = document.createElement("h1");
+  element.classList.add("heading");
+  element.textContent = `me inside container`;
+  conatiner.appendChild(element);
+});
+
+conatiner.addEventListener("click", function (e) {
+  if (event.target.classList.contains("heading")) {
+    console.log("mello joji");
+  }
+});
+
+heading.addEventListener("click", sayHello);
