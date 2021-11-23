@@ -221,17 +221,31 @@
 
 // heading.addEventListener("click", sayHello);
 
-//FORMS
-//form submit events
-//prevent default
+// //FORMS
+// //form submit events
+// //prevent default
 
-const form = document.getElementById("form");
-const name = document.getElementById("name");
-const password = document.getElementById("password");
+// const form = document.getElementById("form");
+// const name = document.getElementById("name");
+// const password = document.getElementById("password");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  console.log("form submitted");
-  console.log(name.value);
-  console.log(password.value);
-});
+// form.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   console.log("form submitted");
+//   console.log(name.value);
+//   console.log(password.value);
+// });
+
+//WEB STORAGE API
+//provided by browser. local storage and session storage
+//setItem, getItem, removeItem, clear
+
+localStorage.setItem("name", "joji");
+// sessionStorage.setItem("name", "dan");
+
+localStorage.setItem("bff", "link");
+localStorage.setItem("job", "BEING BAD");
+localStorage.setItem("address", "Denver");
+const name = localStorage.getItem("name");
+console.log(name);
+localStorage.removeItem("name");
