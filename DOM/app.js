@@ -240,12 +240,30 @@
 //provided by browser. local storage and session storage
 //setItem, getItem, removeItem, clear
 
-localStorage.setItem("name", "joji");
-// sessionStorage.setItem("name", "dan");
+// localStorage.setItem("name", "joji");
+// // sessionStorage.setItem("name", "dan");
 
-localStorage.setItem("bff", "link");
-localStorage.setItem("job", "BEING BAD");
-localStorage.setItem("address", "Denver");
-const name = localStorage.getItem("name");
-console.log(name);
-localStorage.removeItem("name");
+// localStorage.setItem("bff", "link");
+// localStorage.setItem("job", "BEING BAD");
+// localStorage.setItem("address", "Denver");
+// const name = localStorage.getItem("name");
+// console.log(name);
+// localStorage.removeItem("name");
+
+//JSON.STRINGIFY(), JSON.PARSE()
+const friends = ["joji", "dan", "nat"];
+localStorage.setItem("friends", JSON.stringify(friends));
+
+const values = JSON.parse(localStorage.getItem("friends"));
+console.log(values[1]);
+
+let fruits;
+if (localStorage.getItem("fruits")) {
+  fruits = JSON.parse(localStorage.getItem("fruits"));
+} else {
+  fruits = [];
+}
+console.log(fruits);
+fruits.push("kiwi");
+fruits.push("blueberry");
+localStorage.setItem("fruits", JSON.stringify(fruits));
