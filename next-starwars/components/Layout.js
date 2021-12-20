@@ -5,6 +5,7 @@ export const Layout = ({ children }) => {
   return (
     <div>
       <Nav />
+      {children}
     </div>
   );
 };
